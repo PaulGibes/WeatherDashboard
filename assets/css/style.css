@@ -1,0 +1,38 @@
+html {
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 5px solid red;
+}
+
+header {
+  background-color: blue;
+  min-height: 50px;
+}
+
+main {
+  display: flex;
+  /* any child of a flex parent will grow to fill to it's size */
+  flex-grow: 1;
+}
+
+aside {
+  background-color: green;
+  width: 20%;
+}
+
+section {
+  background-color: yellow;
+  width: 80%;
+}
+
+#currentWeather {
+  background-color: aqua;
+}
+
+#forecastWeather {
+  background-color: purple;
+}
