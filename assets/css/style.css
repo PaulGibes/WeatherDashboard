@@ -20,13 +20,41 @@ main {
 }
 
 aside {
+  padding: 10px;
   background-color: green;
   width: 20%;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+#inputEl {
+  border-radius: 10px;
+}
+
+.buttonStyle {
+  border-radius: 10px;
+}
+
+#searchHistory {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  gap: 10px;
+}
+
 section {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
   background-color: yellow;
   width: 80%;
+  gap: 10px;
 }
 
 #currentWeather {
