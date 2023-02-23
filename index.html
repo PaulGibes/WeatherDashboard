@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header>Header</header>
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
     <main>
       <aside id="search">
         <h1>Search for a City</h1>
@@ -26,13 +28,25 @@
         </form>
         <div id="searchHistory"></div>
       </aside>
-      <section>
-        <div id="currentWeather">Current</div>
-        <div id="forecastWeather">Forecast</div>
+      <section id="displayCity">
+        <div id="currentWeather">
+          <div class="weatherHeader">
+            <h2 id="searchedCity"></h2>
+            <h2 id="todaysDate"></h2>
+          </div>
+        </div>
+        <div id="forecastWeather">
+          <h2>5-Day Forecast</h2>
+        </div>
       </section>
     </main>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

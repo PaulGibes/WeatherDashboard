@@ -5,12 +5,14 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  border: 5px solid red;
 }
 
 header {
-  background-color: blue;
+  display: flex;
+  color: aliceblue;
+  background-image: linear-gradient(to right, blue, yellow);
   min-height: 50px;
+  justify-content: center;
 }
 
 main {
@@ -21,7 +23,7 @@ main {
 
 aside {
   padding: 10px;
-  background-color: green;
+  background-color: #004386;
   width: 20%;
 }
 
@@ -54,19 +56,30 @@ form {
   gap: 10px;
 }
 
-section {
+#displayCity {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  background-color: yellow;
+  background-image: url("https://images.unsplash.com/photo-1496450681664-3df85efbd29f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 80%;
   gap: 10px;
 }
 
 #currentWeather {
-  background-color: aqua;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  min-height: 40%;
+}
+
+.weatherHeader {
+  display: flex;
+  justify-content: space-between;
 }
 
 #forecastWeather {
-  background-color: purple;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  min-height: 40%;
 }

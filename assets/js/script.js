@@ -3,13 +3,9 @@
 var searchHistory = $("#searchHistory");
 var cityHistory = JSON.parse(localStorage.getItem("cities")) || [];
 localStorage.setItem("cities", JSON.stringify(cityHistory));
-// var clearHistoryButton = document.querySelector("#clearHistoryButton");
+var today = dayjs().format("dddd, MMMM D YYYY");
 var requestUrl =
   "https://api.openweathermap.org/data/2.5/weather?q=denver&appid=b18b2ada8a7cf01d1a6c89d2666509ec";
-
-// function clearHistory() {
-//   localStorage.clear(cities);
-// }
 
 var seeHistory = function () {
   searchHistory.empty();
@@ -58,4 +54,4 @@ $("#searchForm").submit(function (event) {
 
 seeHistory();
 
-// clearHistoryButton.addEventListener("click", clearHistory);
+$("#todaysDate").text(today);
