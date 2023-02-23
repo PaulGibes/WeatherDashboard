@@ -22,9 +22,12 @@ main {
 }
 
 aside {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   background-color: #004386;
   width: 20%;
+  color: black;
 }
 
 form {
@@ -45,6 +48,7 @@ form {
 
 .clearButtonStyle {
   border-radius: 10px;
+  margin-bottom: 10px;
   background-color: black;
   color: white;
 }
@@ -54,6 +58,13 @@ form {
   flex-direction: column;
   padding-top: 10px;
   gap: 10px;
+}
+
+.weatherAnimal {
+  display: flex;
+  margin-top: auto;
+  width: 100%;
+  max-height: 20vw;
 }
 
 #displayCity {
@@ -88,4 +99,14 @@ form {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: large;
 }
