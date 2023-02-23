@@ -83,6 +83,7 @@ form {
   padding: 10px;
   min-height: 40%;
   display: none;
+  flex-grow: 1;
 }
 
 .weatherHeader {
@@ -95,12 +96,18 @@ form {
   padding: 10px;
   min-height: 40%;
   display: none;
+  flex-grow: 1;
 }
 
 .card-header {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
 }
 
 ul {
