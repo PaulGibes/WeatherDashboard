@@ -41,6 +41,12 @@ form {
   border-radius: 10px;
 }
 
+.clearButtonStyle {
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
 #searchHistory {
   display: flex;
   flex-direction: column;
