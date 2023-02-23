@@ -83,3 +83,9 @@ form {
   padding: 10px;
   min-height: 40%;
 }
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
