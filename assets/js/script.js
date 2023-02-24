@@ -174,7 +174,9 @@ function getForecastWeather(cityName) {
           var humidity = data.list[i].main.humidity;
           var weather = data.list[i].weather[0].description;
           var weatherIcon = data.list[i].weather[0].icon;
-          var dayOfTheWeek = dayjs().add(i, "day").format("ddd");
+          var dayOfTheWeek = dayjs()
+            .add(i + 1, "day")
+            .format("ddd");
           // dynamically create a variable that will be the card using template literal notation. Another way to write '+"'" + "+ ""'+ ' '""+"" ++ +
           var cardHTML = `
           <div class="col">
